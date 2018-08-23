@@ -38,7 +38,7 @@ on digital computers all functions are not Lipschitz continuous and behave
 like a staircase function (where the gradient is zero almost everywhere) is
 incorrect. Under the white-box setting, gradients can be computed via automatic
 differentiation, which is well supported by mature packages like TensorFlow.
-See [our reply and discussions with Ian Goodfellow on gradient masking and implmentation on digital computers](https://openreview.net/forum?id=BkUHlMZ0b&noteId=Hyc-dnN6f&noteId=SkzxpFrpz).
+See [our reply and discussions with Ian Goodfellow on gradient masking and implementation on digital computers](https://openreview.net/forum?id=BkUHlMZ0b&noteId=Hyc-dnN6f&noteId=SkzxpFrpz).
 
 Setup and train models
 -------------------------------------
