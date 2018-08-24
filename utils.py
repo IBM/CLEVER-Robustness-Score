@@ -50,7 +50,7 @@ def generate_data(data, samples, targeted=True, random_and_least_likely = False,
     start: offset into data to use
     ids: true IDs of images in the dataset, if given, will use these images
     target_classes: a list of list of labels for each ids
-    inception: if targeted and inception, randomly sample 100 targets intead of 1000
+    inception: if targeted and inception, randomly sample 100 targets instead of 1000
     """
     inputs = []
     targets = []
