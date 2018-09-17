@@ -8,6 +8,7 @@
 
 import numpy as np
 import random
+from PIL import Image
 
 def linf_dist(x, y):
     return np.linalg.norm(x.flatten() - y.flatten(), ord=np.inf)
