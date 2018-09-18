@@ -463,7 +463,9 @@ class EstimateLipschitz(object):
                             feed_dict = {self.img: batch_inputs, self.target_label: target_label, self.true_label: true_label})
                 
                     if self.compute_slope:
-                        # compute distance between consecutive samples: not use sequential samples 
+                        # compute distance between consecutive samples: not use sequential samples
+                        # 's' is undefined in the nex three lines.
+                        # This is a dead code for internal testing and will not affect the CLEVER score computation.
                         s12_2_norm = np.linalg.norm(s[0:batch_size-1:2] - s[1:batch_size:2], axis = 1)
                         s12_1_norm = np.linalg.norm(s[0:batch_size-1:2] - s[1:batch_size:2], ord=1, axis = 1)
                         s12_i_norm = np.linalg.norm(s[0:batch_size-1:2] - s[1:batch_size:2], ord=np.inf, axis = 1)
